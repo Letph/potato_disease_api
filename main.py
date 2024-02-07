@@ -6,7 +6,7 @@ from PIL import Image
 import tensorflow as tf
 
 app = FastAPI()
-MODEL = tf.keras.models.load_model("./trained_models/1")
+MODEL = tf.keras.models.load_model("./potatoes.h5")
 CLASS_NAMES = ['Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy']
 
 @app.get('/ping')
